@@ -42,3 +42,33 @@
     box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
 
+@media screen and (max-width: 768px) {
+    .imagenes {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .imagen-galeria,
+    .imagen-galeria:nth-child(2),
+    .imagen-galeria:nth-child(3),
+    .imagen-galeria:nth-child(4),
+    .imagen-galeria:nth-child(5) {
+        grid-column: 1;
+        grid-row: auto;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imagenes {
+        padding: 10px;
+    }
+
+    .imagen-galeria,
+    .imagen-galeria:nth-child(2),
+    .imagen-galeria:nth-child(3),
+    .imagen-galeria:nth-child(4),
+    .imagen-galeria:nth-child(5) {
+        height: 250px;
+    }
+}

@@ -30,6 +30,7 @@ ol, ul {
     flex-wrap: wrap;
     position: relative;
     padding: 0 2rem;
+    z-index: 1000;
 }
 
 
@@ -69,6 +70,7 @@ ol, ul {
     align-items: center;
     gap: 3rem;
     transition: all .3s;
+    z-index: 999;
 }
 
 
@@ -82,27 +84,6 @@ ol, ul {
     height: calc(100vh - 80px);
 }
 
-@media (min-width:768px) {
-    .label_hamburguesa {
-        display: none;
-    }
-    .ul_links {
-        position: static;
-        width: auto;
-        height: auto;
-        flex-direction: row;
-        gap: 1rem;
-    }
-    
-    .link {
-        font-size: 1.2rem;
-        transition: all .3s;
-    }
-    .link:hover{
-        background-color: black;
-        padding: .2rem .7rem;
-    }
-}
 
 
 .footer {
@@ -164,3 +145,24 @@ ol, ul {
     margin: 0 auto;
 }
 
+@media (min-width:768px) {
+    .label_hamburguesa {
+        display: none;
+    }
+    .ul_links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .link {
+        font-size: 1.2rem;
+        transition: all .3s;
+    }
+    .link:hover{
+        background-color: black;
+        padding: .2rem .7rem;
+    }
+}

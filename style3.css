@@ -42,6 +42,38 @@
     box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
 
+
+.imagen-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.274);
+    color: white;
+    padding: 15px;
+}
+
+.imagen-texto h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.imagen-texto p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.imagen-texto:hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    padding: 25px;
+}
+
+
 @media screen and (max-width: 768px) {
     .imagenes {
         grid-template-columns: 1fr;

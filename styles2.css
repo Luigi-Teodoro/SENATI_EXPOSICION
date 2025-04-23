@@ -95,7 +95,7 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    cursor: pointer; /* Cursor de mano al pasar sobre la tarjeta */
+    cursor: pointer; 
 }
 
 .card:hover {
@@ -131,25 +131,25 @@
 .card-image {
     width: 105%;
     height: 100%;
-    object-fit: cover; /* Para asegurar que la imagen se recorte y mantenga las proporciones */
+    object-fit: cover; 
     position: absolute;
-    bottom: 0; /* La imagen estará al fondo */
+    bottom: 0; 
 }
 
 .card:hover .card-image {
-    opacity: 0.7; /* Cambia la opacidad al pasar el ratón sobre la tarjeta */
+    opacity: 0.7; 
 }
 
 @media (max-width: 480px) {
     .card {
-        width: 100%; /* Una tarjeta por fila en móviles */
+        width: 100%; 
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        width: calc(50% - 20px); /* Dos tarjetas por fila */
+        width: calc(50% - 20px); 
     }
 }
 
